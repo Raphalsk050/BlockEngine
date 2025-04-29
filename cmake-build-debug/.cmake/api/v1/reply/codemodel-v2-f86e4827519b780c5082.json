@@ -189,35 +189,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "block_engine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-block_engine-Debug-7ab63e4473e61e8a97e3.json",
+					"jsonFile" : "target-block_engine-Debug-0c2884fac050038dd12f.json",
 					"name" : "block_engine",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-Debug-ec2aea8408e5c4b9e35a.json",
+					"jsonFile" : "target-glad-Debug-ee2458516fc91f7f949b.json",
 					"name" : "glad",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@d5fdcda1ec52eb23cf38",
-					"jsonFile" : "target-glfw-Debug-20bfd26f163b14dfdb7b.json",
+					"jsonFile" : "target-glfw-Debug-a883ac06a664f0eed325.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "glm::@ba12ce015dbd771cf20f",
-					"jsonFile" : "target-glm-Debug-da6f3e06b1b791704b0f.json",
+					"jsonFile" : "target-glm-Debug-04edbba74b1bb5f10dba.json",
 					"name" : "glm",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "spdlog::@a773060f2b7ab8fa67f8",
-					"jsonFile" : "target-spdlog-Debug-4e9fb4adc67edfe2eb88.json",
+					"jsonFile" : "target-spdlog-Debug-26b890fe8c6ada21e6ed.json",
 					"name" : "spdlog",
 					"projectIndex" : 3
 				},
@@ -241,8 +241,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug",
-		"source" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine"
+		"build" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug",
+		"source" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine"
 	},
 	"version" : 
 	{

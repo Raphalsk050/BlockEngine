@@ -442,8 +442,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug",
-		"source" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine"
+		"build" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug",
+		"source" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine"
 	},
 	"version" : 
 	{

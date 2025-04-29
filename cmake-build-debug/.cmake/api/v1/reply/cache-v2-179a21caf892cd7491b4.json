@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -507,7 +507,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1607,7 +1607,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_COCOA",
@@ -1727,7 +1727,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw"
 		},
 		{
 			"name" : "GLM_BUILD_INSTALL",
@@ -2351,7 +2351,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug"
 		},
 		{
 			"name" : "block_engine_IS_TOP_LEVEL",
@@ -2375,7 +2375,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine"
 		},
 		{
 			"name" : "glm_BINARY_DIR",
@@ -2387,7 +2387,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm"
 		},
 		{
 			"name" : "glm_IS_TOP_LEVEL",
@@ -2411,7 +2411,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm"
 		},
 		{
 			"name" : "spdlog_BINARY_DIR",
@@ -2423,7 +2423,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog"
 		},
 		{
 			"name" : "spdlog_IS_TOP_LEVEL",
@@ -2447,7 +2447,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog"
+			"value" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog"
 		}
 	],
 	"kind" : "cache",

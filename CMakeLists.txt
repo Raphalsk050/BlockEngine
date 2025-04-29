@@ -22,6 +22,8 @@ include_directories(
 
 add_executable(block_engine
         src/types.h
+        src/window/glfw_window.h
+        src/window/glfw_window.cpp
         src/block_engine.h
         main.cpp)
 

@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/
+cmake_ninja_workdir = /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target glad
 
@@ -49,10 +49,10 @@ cmake_ninja_workdir = /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-bui
 
 build cmake_object_order_depends_target_glad: phony || .
 
-build CMakeFiles/glad.dir/third_party/glad/src/glad.c.o: C_COMPILER__glad_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glad/src/glad.c || cmake_object_order_depends_target_glad
+build CMakeFiles/glad.dir/third_party/glad/src/glad.c.o: C_COMPILER__glad_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/src/glad.c || cmake_object_order_depends_target_glad
   DEP_FILE = CMakeFiles/glad.dir/third_party/glad/src/glad.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glad/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include
   OBJECT_DIR = CMakeFiles/glad.dir
   OBJECT_FILE_DIR = CMakeFiles/glad.dir/third_party/glad/src
 
@@ -82,19 +82,27 @@ build libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug CMakeFiles/glad.dir/third_p
 
 build cmake_object_order_depends_target_block_engine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_glm cmake_object_order_depends_target_spdlog
 
-build CMakeFiles/block_engine.dir/main.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/main.cpp || cmake_object_order_depends_target_block_engine
+build CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/window/glfw_window.cpp || cmake_object_order_depends_target_block_engine
+  DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
+  DEP_FILE = CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  OBJECT_DIR = CMakeFiles/block_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/window
+
+build CMakeFiles/block_engine.dir/main.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/main.cpp || cmake_object_order_depends_target_block_engine
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir
 
-build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/src/log/belog.cpp || cmake_object_order_depends_target_block_engine
+build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/log/belog.cpp || cmake_object_order_depends_target_block_engine
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/src/log/belog.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/log
 
@@ -106,7 +114,7 @@ build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engin
 #############################################
 # Link the executable block_engine
 
-build block_engine: CXX_EXECUTABLE_LINKER__block_engine_Debug CMakeFiles/block_engine.dir/main.cpp.o CMakeFiles/block_engine.dir/src/log/belog.cpp.o | third_party/glm/glm/libglm.a third_party/glfw/src/libglfw3.a libglad.a third_party/spdlog/libspdlogd.a || libglad.a third_party/glfw/src/libglfw3.a third_party/glm/glm/libglm.a third_party/spdlog/libspdlogd.a
+build block_engine: CXX_EXECUTABLE_LINKER__block_engine_Debug CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o CMakeFiles/block_engine.dir/main.cpp.o CMakeFiles/block_engine.dir/src/log/belog.cpp.o | third_party/glm/glm/libglm.a third_party/glfw/src/libglfw3.a libglad.a third_party/spdlog/libspdlogd.a || libglad.a third_party/glfw/src/libglfw3.a third_party/glm/glm/libglm.a third_party/spdlog/libspdlogd.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
   LINK_LIBRARIES = third_party/glm/glm/libglm.a  third_party/glfw/src/libglfw3.a  libglad.a  third_party/spdlog/libspdlogd.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  -framework QuartzCore
   OBJECT_DIR = CMakeFiles/block_engine.dir
@@ -120,7 +128,7 @@ build block_engine: CXX_EXECUTABLE_LINKER__block_engine_Debug CMakeFiles/block_e
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -131,7 +139,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -149,7 +157,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -161,7 +169,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -173,7 +181,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -182,7 +190,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/rafaelaragaomorais/_PROJECTS/block_engine/CMakeLists.txt
+# /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/CMakeLists.txt
 # =============================================================================
 
 
@@ -190,7 +198,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for edit_cache
 
 build third_party/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -201,7 +209,7 @@ build third_party/glm/edit_cache: phony third_party/glm/CMakeFiles/edit_cache.ut
 # Utility command for rebuild_cache
 
 build third_party/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -219,7 +227,7 @@ build third_party/glm/list_install_components: phony
 # Utility command for install
 
 build third_party/glm/CMakeFiles/install.util: CUSTOM_COMMAND third_party/glm/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -231,7 +239,7 @@ build third_party/glm/install: phony third_party/glm/CMakeFiles/install.util
 # Utility command for install/local
 
 build third_party/glm/CMakeFiles/install/local.util: CUSTOM_COMMAND third_party/glm/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -243,7 +251,7 @@ build third_party/glm/install/local: phony third_party/glm/CMakeFiles/install/lo
 # Utility command for install/strip
 
 build third_party/glm/CMakeFiles/install/strip.util: CUSTOM_COMMAND third_party/glm/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -252,7 +260,7 @@ build third_party/glm/install/strip: phony third_party/glm/CMakeFiles/install/st
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm/CMakeLists.txt
+# /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -264,10 +272,10 @@ build third_party/glm/install/strip: phony third_party/glm/CMakeFiles/install/st
 
 build cmake_object_order_depends_target_glm: phony || .
 
-build third_party/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o: CXX_COMPILER__glm_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm/glm/detail/glm.cpp || cmake_object_order_depends_target_glm
+build third_party/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o: CXX_COMPILER__glm_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm/glm/detail/glm.cpp || cmake_object_order_depends_target_glm
   DEP_FILE = third_party/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics -Wno-c++98-compat -Wno-c++98-compat-pedantic
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm
   OBJECT_DIR = third_party/glm/glm/CMakeFiles/glm.dir
   OBJECT_FILE_DIR = third_party/glm/glm/CMakeFiles/glm.dir/detail
 
@@ -293,7 +301,7 @@ build third_party/glm/glm/libglm.a: CXX_STATIC_LIBRARY_LINKER__glm_Debug third_p
 # Utility command for edit_cache
 
 build third_party/glm/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -304,7 +312,7 @@ build third_party/glm/glm/edit_cache: phony third_party/glm/glm/CMakeFiles/edit_
 # Utility command for rebuild_cache
 
 build third_party/glm/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -322,7 +330,7 @@ build third_party/glm/glm/list_install_components: phony
 # Utility command for install
 
 build third_party/glm/glm/CMakeFiles/install.util: CUSTOM_COMMAND third_party/glm/glm/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -334,7 +342,7 @@ build third_party/glm/glm/install: phony third_party/glm/glm/CMakeFiles/install.
 # Utility command for install/local
 
 build third_party/glm/glm/CMakeFiles/install/local.util: CUSTOM_COMMAND third_party/glm/glm/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -346,7 +354,7 @@ build third_party/glm/glm/install/local: phony third_party/glm/glm/CMakeFiles/in
 # Utility command for install/strip
 
 build third_party/glm/glm/CMakeFiles/install/strip.util: CUSTOM_COMMAND third_party/glm/glm/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -355,7 +363,7 @@ build third_party/glm/glm/install/strip: phony third_party/glm/glm/CMakeFiles/in
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/rafaelaragaomorais/_PROJECTS/block_engine/CMakeLists.txt
+# /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/CMakeLists.txt
 # =============================================================================
 
 
@@ -369,7 +377,7 @@ build third_party/glfw/uninstall: phony third_party/glfw/CMakeFiles/uninstall
 # Utility command for edit_cache
 
 build third_party/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -380,7 +388,7 @@ build third_party/glfw/edit_cache: phony third_party/glfw/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build third_party/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -398,7 +406,7 @@ build third_party/glfw/list_install_components: phony
 # Utility command for install
 
 build third_party/glfw/CMakeFiles/install.util: CUSTOM_COMMAND third_party/glfw/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -410,7 +418,7 @@ build third_party/glfw/install: phony third_party/glfw/CMakeFiles/install.util
 # Utility command for install/local
 
 build third_party/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND third_party/glfw/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -422,7 +430,7 @@ build third_party/glfw/install/local: phony third_party/glfw/CMakeFiles/install/
 # Utility command for install/strip
 
 build third_party/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND third_party/glfw/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -434,11 +442,11 @@ build third_party/glfw/install/strip: phony third_party/glfw/CMakeFiles/install/
 # Custom command for third_party/glfw/CMakeFiles/uninstall
 
 build third_party/glfw/CMakeFiles/uninstall | ${cmake_ninja_workdir}third_party/glfw/CMakeFiles/uninstall: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/cmake_uninstall.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/cmake_uninstall.cmake
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMakeLists.txt
+# /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -450,171 +458,171 @@ build third_party/glfw/CMakeFiles/uninstall | ${cmake_ninja_workdir}third_party/
 
 build cmake_object_order_depends_target_glfw: phony || .
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/context.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/context.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/init.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/init.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/input.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/input.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/platform.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/platform.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/platform.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/platform.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/window.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/window.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/null_init.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/null_window.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/posix_module.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/posix_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
-build third_party/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
+build third_party/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: OBJC_COMPILER__glfw_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_COCOA
   DEP_FILE = third_party/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o.d
   FLAGS = -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fPIC -fcolor-diagnostics -Wall
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
   OBJECT_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = third_party/glfw/src/CMakeFiles/glfw.dir
 
@@ -646,7 +654,7 @@ build third_party/glfw/src/update_mappings: phony third_party/glfw/src/CMakeFile
 # Utility command for edit_cache
 
 build third_party/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -657,7 +665,7 @@ build third_party/glfw/src/edit_cache: phony third_party/glfw/src/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build third_party/glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -675,7 +683,7 @@ build third_party/glfw/src/list_install_components: phony
 # Utility command for install
 
 build third_party/glfw/src/CMakeFiles/install.util: CUSTOM_COMMAND third_party/glfw/src/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -687,7 +695,7 @@ build third_party/glfw/src/install: phony third_party/glfw/src/CMakeFiles/instal
 # Utility command for install/local
 
 build third_party/glfw/src/CMakeFiles/install/local.util: CUSTOM_COMMAND third_party/glfw/src/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -699,7 +707,7 @@ build third_party/glfw/src/install/local: phony third_party/glfw/src/CMakeFiles/
 # Utility command for install/strip
 
 build third_party/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND third_party/glfw/src/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -711,12 +719,12 @@ build third_party/glfw/src/install/strip: phony third_party/glfw/src/CMakeFiles/
 # Custom command for third_party/glfw/src/CMakeFiles/update_mappings
 
 build third_party/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}third_party/glfw/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMakeLists.txt
+# /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMakeLists.txt
 # =============================================================================
 
 
@@ -724,7 +732,7 @@ build third_party/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}th
 # Utility command for edit_cache
 
 build third_party/glfw/docs/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -735,7 +743,7 @@ build third_party/glfw/docs/edit_cache: phony third_party/glfw/docs/CMakeFiles/e
 # Utility command for rebuild_cache
 
 build third_party/glfw/docs/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -753,7 +761,7 @@ build third_party/glfw/docs/list_install_components: phony
 # Utility command for install
 
 build third_party/glfw/docs/CMakeFiles/install.util: CUSTOM_COMMAND third_party/glfw/docs/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -765,7 +773,7 @@ build third_party/glfw/docs/install: phony third_party/glfw/docs/CMakeFiles/inst
 # Utility command for install/local
 
 build third_party/glfw/docs/CMakeFiles/install/local.util: CUSTOM_COMMAND third_party/glfw/docs/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -777,7 +785,7 @@ build third_party/glfw/docs/install/local: phony third_party/glfw/docs/CMakeFile
 # Utility command for install/strip
 
 build third_party/glfw/docs/CMakeFiles/install/strip.util: CUSTOM_COMMAND third_party/glfw/docs/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -786,7 +794,7 @@ build third_party/glfw/docs/install/strip: phony third_party/glfw/docs/CMakeFile
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/rafaelaragaomorais/_PROJECTS/block_engine/CMakeLists.txt
+# /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -798,59 +806,59 @@ build third_party/glfw/docs/install/strip: phony third_party/glfw/docs/CMakeFile
 
 build cmake_object_order_depends_target_spdlog: phony || .
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
-build third_party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/src/bundled_fmtlib_format.cpp || cmake_object_order_depends_target_spdlog
+build third_party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: CXX_COMPILER__spdlog_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/src/bundled_fmtlib_format.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = third_party/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o.d
   FLAGS = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = third_party/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = third_party/spdlog/CMakeFiles/spdlog.dir/src
 
@@ -876,7 +884,7 @@ build third_party/spdlog/libspdlogd.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Debug t
 # Utility command for edit_cache
 
 build third_party/spdlog/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -887,7 +895,7 @@ build third_party/spdlog/edit_cache: phony third_party/spdlog/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build third_party/spdlog/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/block_engine -B/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/rafaelaragaomorais/_PROJECTS/BlockEngine -B/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -905,7 +913,7 @@ build third_party/spdlog/list_install_components: phony
 # Utility command for install
 
 build third_party/spdlog/CMakeFiles/install.util: CUSTOM_COMMAND third_party/spdlog/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -917,7 +925,7 @@ build third_party/spdlog/install: phony third_party/spdlog/CMakeFiles/install.ut
 # Utility command for install/local
 
 build third_party/spdlog/CMakeFiles/install/local.util: CUSTOM_COMMAND third_party/spdlog/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -929,7 +937,7 @@ build third_party/spdlog/install/local: phony third_party/spdlog/CMakeFiles/inst
 # Utility command for install/strip
 
 build third_party/spdlog/CMakeFiles/install/strip.util: CUSTOM_COMMAND third_party/spdlog/all
-  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog && /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -963,98 +971,98 @@ build update_mappings: phony third_party/glfw/src/update_mappings
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
 
 build codegen: phony third_party/glm/codegen third_party/glfw/codegen third_party/spdlog/codegen
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw
 
 build third_party/glfw/codegen: phony third_party/glfw/src/codegen third_party/glfw/docs/codegen
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs
 
 build third_party/glfw/docs/codegen: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
 
 build third_party/glfw/src/codegen: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm
 
 build third_party/glm/codegen: phony third_party/glm/glm/codegen
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm
 
 build third_party/glm/glm/codegen: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog
 
 build third_party/spdlog/codegen: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug
 
 build all: phony libglad.a block_engine third_party/glm/all third_party/glfw/all third_party/spdlog/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw
 
 build third_party/glfw/all: phony third_party/glfw/src/all third_party/glfw/docs/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/docs
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/docs
 
 build third_party/glfw/docs/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src
 
 build third_party/glfw/src/all: phony third_party/glfw/src/libglfw3.a
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm
 
 build third_party/glm/all: phony third_party/glm/glm/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glm/glm
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glm/glm
 
 build third_party/glm/glm/all: phony third_party/glm/glm/libglm.a
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/spdlog
+# Folder: /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/spdlog
 
 build third_party/spdlog/all: phony third_party/spdlog/libspdlogd.a
 
@@ -1065,14 +1073,14 @@ build third_party/spdlog/all: phony third_party/spdlog/libspdlogd.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDependentOption.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeOBJCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckLibraryExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckSymbolExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindDoxygen.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageMessage.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindThreads.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/GNUInstallDirs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeOBJCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake /Users/rafaelaragaomorais/_PROJECTS/block_engine/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/cmake_uninstall.cmake.in /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/glfw3.pc.in /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/glfw3Config.cmake.in /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/docs/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/cmake/ide.cmake /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/cmake/utils.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeOBJCCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDependentOption.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeOBJCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckLibraryExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckSymbolExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindDoxygen.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageMessage.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindThreads.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/GNUInstallDirs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeOBJCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/cmake_uninstall.cmake.in /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/glfw3.pc.in /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/glfw3Config.cmake.in /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/docs/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/cmake/ide.cmake /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/cmake/utils.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeOBJCCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDependentOption.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeOBJCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckLibraryExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckSymbolExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindDoxygen.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageMessage.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindThreads.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/GNUInstallDirs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeOBJCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake /Users/rafaelaragaomorais/_PROJECTS/block_engine/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/cmake_uninstall.cmake.in /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/glfw3.pc.in /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMake/glfw3Config.cmake.in /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/docs/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glm/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/cmake/ide.cmake /Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/spdlog/cmake/utils.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeOBJCCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake: phony
+build /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeDependentOption.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeOBJCInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckIncludeFile.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckLibraryExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CheckSymbolExists.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Compiler/GNU.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindDoxygen.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindPackageMessage.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/FindThreads.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/GNUInstallDirs.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CMakeOBJCLinkerInformation.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Linker/AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Apple-Clang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-C.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-OBJC.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /Users/rafaelaragaomorais/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/cmake_uninstall.cmake.in /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/glfw3.pc.in /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMake/glfw3Config.cmake.in /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/docs/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm/glm/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/CMakeLists.txt /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/cmake/ide.cmake /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/cmake/utils.cmake CMakeCache.txt CMakeFiles/3.31.4/CMakeCCompiler.cmake CMakeFiles/3.31.4/CMakeCXXCompiler.cmake CMakeFiles/3.31.4/CMakeOBJCCompiler.cmake CMakeFiles/3.31.4/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -7,4 +7,6 @@ public:
   void initialize(int width, int height) override;
 
   void close() override;
+  private:
+  GLFWwindow* window_;
 };

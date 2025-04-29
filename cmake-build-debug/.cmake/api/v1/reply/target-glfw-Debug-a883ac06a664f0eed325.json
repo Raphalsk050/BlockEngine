@@ -108,15 +108,15 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include"
+					"path" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src"
+					"path" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src"
+					"path" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src"
 				}
 			],
 			"language" : "C",
@@ -170,15 +170,15 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/include"
+					"path" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/third_party/glfw/src"
+					"path" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/src"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-debug/third_party/glfw/src"
+					"path" : "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-debug/third_party/glfw/src"
 				}
 			],
 			"language" : "OBJC",

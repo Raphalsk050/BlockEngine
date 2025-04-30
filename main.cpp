@@ -2,6 +2,6 @@
 
 int main() {
   auto *engine = new BEngine::BlockEngine();
-  BELOG_CORE_INFO("test");
+  BENGINE_CORE_INFO("test");
   return 0;
 }

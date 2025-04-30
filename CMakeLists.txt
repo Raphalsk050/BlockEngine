@@ -20,11 +20,13 @@ include_directories(
         ${glad_DIR}/include
 )
 
+file(GLOB_RECURSE ENGINE_SRC
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/**/*.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/**/*.cpp
+)
+
 add_executable(block_engine
-        src/types.h
-        src/window/glfw_window.h
-        src/window/glfw_window.cpp
-        src/block_engine.h
+        ${ENGINE_SRC}
         main.cpp)
 
 # Compile commands
@@ -34,8 +36,8 @@ target_compile_definitions(block_engine
         $<$<CONFIG:Release>:NDEBUG>
 )
 
-target_sources(block_engine PRIVATE
-        $<$<CONFIG:Debug>:src/log/belog.cpp>
-)
+#target_sources(block_engine PRIVATE
+#        $<$<CONFIG:Debug>:src/log/belog.cpp>
+#)
 
 target_link_libraries(block_engine PUBLIC glm glfw glad spdlog)

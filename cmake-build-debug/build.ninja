@@ -82,9 +82,33 @@ build libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug CMakeFiles/glad.dir/third_p
 
 build cmake_object_order_depends_target_block_engine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_glm cmake_object_order_depends_target_spdlog
 
+build CMakeFiles/block_engine.dir/src/input/input.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/input/input.cpp || cmake_object_order_depends_target_block_engine
+  DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
+  DEP_FILE = CMakeFiles/block_engine.dir/src/input/input.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  OBJECT_DIR = CMakeFiles/block_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/input
+
+build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/log/belog.cpp || cmake_object_order_depends_target_block_engine
+  DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
+  DEP_FILE = CMakeFiles/block_engine.dir/src/log/belog.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  OBJECT_DIR = CMakeFiles/block_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/log
+
 build CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/window/glfw_window.cpp || cmake_object_order_depends_target_block_engine
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  OBJECT_DIR = CMakeFiles/block_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/window
+
+build CMakeFiles/block_engine.dir/src/window/window.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/window/window.cpp || cmake_object_order_depends_target_block_engine
+  DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
+  DEP_FILE = CMakeFiles/block_engine.dir/src/window/window.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
@@ -98,14 +122,6 @@ build CMakeFiles/block_engine.dir/main.cpp.o: CXX_COMPILER__block_engine_unscann
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir
 
-build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engine_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/src/log/belog.cpp || cmake_object_order_depends_target_block_engine
-  DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
-  DEP_FILE = CMakeFiles/block_engine.dir/src/log/belog.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
-  OBJECT_DIR = CMakeFiles/block_engine.dir
-  OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/log
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target block_engine
@@ -114,7 +130,7 @@ build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engin
 #############################################
 # Link the executable block_engine
 
-build block_engine: CXX_EXECUTABLE_LINKER__block_engine_Debug CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o CMakeFiles/block_engine.dir/main.cpp.o CMakeFiles/block_engine.dir/src/log/belog.cpp.o | third_party/glm/glm/libglm.a third_party/glfw/src/libglfw3.a libglad.a third_party/spdlog/libspdlogd.a || libglad.a third_party/glfw/src/libglfw3.a third_party/glm/glm/libglm.a third_party/spdlog/libspdlogd.a
+build block_engine: CXX_EXECUTABLE_LINKER__block_engine_Debug CMakeFiles/block_engine.dir/src/input/input.cpp.o CMakeFiles/block_engine.dir/src/log/belog.cpp.o CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o CMakeFiles/block_engine.dir/src/window/window.cpp.o CMakeFiles/block_engine.dir/main.cpp.o | third_party/glm/glm/libglm.a third_party/glfw/src/libglfw3.a libglad.a third_party/spdlog/libspdlogd.a || libglad.a third_party/glfw/src/libglfw3.a third_party/glm/glm/libglm.a third_party/spdlog/libspdlogd.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
   LINK_LIBRARIES = third_party/glm/glm/libglm.a  third_party/glfw/src/libglfw3.a  libglad.a  third_party/spdlog/libspdlogd.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  -framework QuartzCore
   OBJECT_DIR = CMakeFiles/block_engine.dir

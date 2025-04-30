@@ -1,12 +1,15 @@
 #pragma once
 #include "window.h"
 
+namespace BEngine {
+  class glfw_window : public window{
+  public:
+    glfw_window() = default;
 
-class glfw_window : public window{
-public:
-  void initialize(int width, int height) override;
+    void initialize(int width, int height) override;
 
-  void close() override;
+    void close() override;
   private:
-  GLFWwindow* window_;
-};
+    GLFWwindow* window_;
+  };
+}

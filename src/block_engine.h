@@ -16,11 +16,11 @@ namespace BEngine {
   public:
     // TODO: This is only for test proposes, remove this
     BlockEngine() {
-      auto window = new glfw_window();
-      window->initialize(800, 600);
 #ifdef DEBUG
       Belog::Init();
 #endif
+      auto window = new glfw_window();
+      window->initialize(800, 600);
     }
   };
 }

@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-release/third_party/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-release/third_party/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-release/third_party/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-release/third_party/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/rafaelaragaomorais/_PROJECTS/block_engine/cmake-build-release/third_party/glfw/install_manifest.txt" files)
+file(READ "/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/cmake-build-release/third_party/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

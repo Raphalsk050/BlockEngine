@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_glad: phony || .
 build CMakeFiles/glad.dir/third_party/glad/src/glad.c.o: C_COMPILER__glad_unscanned_Debug /Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/src/glad.c || cmake_object_order_depends_target_glad
   DEP_FILE = CMakeFiles/glad.dir/third_party/glad/src/glad.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/linmath
   OBJECT_DIR = CMakeFiles/glad.dir
   OBJECT_FILE_DIR = CMakeFiles/glad.dir/third_party/glad/src
 
@@ -86,7 +86,7 @@ build CMakeFiles/block_engine.dir/src/input/input.cpp.o: CXX_COMPILER__block_eng
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/src/input/input.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/linmath -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/input
 
@@ -94,7 +94,7 @@ build CMakeFiles/block_engine.dir/src/log/belog.cpp.o: CXX_COMPILER__block_engin
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/src/log/belog.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/linmath -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/log
 
@@ -102,7 +102,7 @@ build CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o: CXX_COMPILER__bl
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/src/window/glfw_window.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/linmath -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/window
 
@@ -110,7 +110,7 @@ build CMakeFiles/block_engine.dir/src/window/window.cpp.o: CXX_COMPILER__block_e
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/src/window/window.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/linmath -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir/src/window
 
@@ -118,7 +118,7 @@ build CMakeFiles/block_engine.dir/main.cpp.o: CXX_COMPILER__block_engine_unscann
   DEFINES = -DDEBUG -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/block_engine.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
+  INCLUDES = -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glad/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/linmath -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glm -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/glfw/include -I/Users/rafaelaragaomorais/_PROJECTS/BlockEngine/third_party/spdlog/include
   OBJECT_DIR = CMakeFiles/block_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/block_engine.dir
 

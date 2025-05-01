@@ -6,6 +6,7 @@ set(glm_DIR third_party/glm)
 set(glfw_DIR third_party/glfw)
 set(glad_DIR third_party/glad)
 set(spdlog_DIR third_party/spdlog)
+set(linmath_DIR third_party/linmath)
 
 # GLM ===================
 add_subdirectory(${glm_DIR})
@@ -18,6 +19,7 @@ add_library(glad STATIC
 
 include_directories(
         ${glad_DIR}/include
+        ${linmath_DIR}
 )
 
 file(GLOB_RECURSE ENGINE_SRC
